@@ -96,6 +96,10 @@ Brave Search may occasionally present a CAPTCHA to verify that the request is no
 
 To minimize CAPTCHA occurrences, the application uses a common browser user-agent. For persistent issues, more advanced techniques such as integrating a proxy rotation service or a CAPTCHA-solving service would be necessary.
 
+## Attribution
+
+This project was inspired by and built upon the foundational work of [ShivadityaKr's BraveAI-Scraper](https://github.com/ShivadityaKr/BraveAI-Scraper).
+
 ## Disclaimer
 
 This project is intended for educational purposes only. The developers are not responsible for any misuse of this tool. Please use it responsibly and in accordance with all applicable laws and regulations.
