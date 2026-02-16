@@ -51,7 +51,10 @@ async def search(q: str):
     page = None
     try:
         # Create a new page for each request for isolation.
-        page = await browser_context["browser"].new_page(bypass_csp=True)
+        page = await browser_context["browser"].new_page(
+            bypass_csp=True,
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
+        )
         searcher = BraveSearcher(page)
         result = await searcher.search(q)
         return {"query": q, "result": result}
